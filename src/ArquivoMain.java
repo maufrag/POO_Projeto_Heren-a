@@ -51,7 +51,7 @@ public class ArquivoMain {
 		funcionario.setSalario(1250.00);
 		
 		funcionario.listar();
-		
+		System.out.println("\n");
 		Gerente gerente = new Gerente();
 		
 		

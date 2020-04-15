@@ -1,9 +1,9 @@
 package Classes.Funcionario;
 
 public class Funcionario {
-	private String nome;
-	private String cpf;
-	private double salario;
+	protected String nome;
+	protected String cpf;
+	protected double salario;
 	
 	public String getNome() {
 		return nome;
@@ -32,6 +32,6 @@ public class Funcionario {
 		System.out.println("CPF: " + this.cpf);
 		System.out.println("Salario: " + this.salario);
 		System.out.println("Bonificação: " + getBonificacao());
-		System.out.println("\n");
+		
 	}
 }

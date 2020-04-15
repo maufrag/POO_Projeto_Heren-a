@@ -29,7 +29,7 @@ public class Gerente extends Funcionario {
 
 	@Override
 	public double getBonificacao() {
-		return (getSalario() * 0.1) + 1000;
+		return super.getBonificacao() + 1000;
 	}
 
 	public void autenticar(int senha) {
@@ -38,10 +38,7 @@ public class Gerente extends Funcionario {
 	
 	@Override
 	public void listar() {
-		System.out.println("\n");
-		System.out.println("Nome: " + this.getNome());
-		System.out.println("CPF: " + this.getCpf());
-		System.out.println("Salario: " + this.getSalario());
+		super.listar();
 		System.out.println("Senha Especial: " + this.senhaEspecial);
 		System.out.println("Quantidade de Funcionarios gerenciados: " + this.numeroDeFuncionariosGerenciados);
 		System.out.println("Bonificação: " +  getBonificacao());
