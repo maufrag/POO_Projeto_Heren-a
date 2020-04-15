@@ -41,7 +41,6 @@ public class Gerente extends Funcionario {
 		super.listar();
 		System.out.println("Senha Especial: " + this.senhaEspecial);
 		System.out.println("Quantidade de Funcionarios gerenciados: " + this.numeroDeFuncionariosGerenciados);
-		System.out.println("Bonificação: " +  getBonificacao());
 	}
 	
 }
